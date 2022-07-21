@@ -1,0 +1,193 @@
+@import 'nullstyle';
+
+.App {}
+
+.input {
+	border: 2px solid purple;
+	border-radius: 10px;
+	padding: 5px 15px;
+	font-size: 18px;
+	width: 100%;
+	max-width: 400px;
+}
+
+.btn {
+	border: 2px solid purple;
+	border-radius: 10px;
+	padding: 5px 15px;
+	font-size: 18px;
+	background-color: initial;
+	&:hover {
+		background-color: rgba(204, 32, 204, 0.507);
+	}
+	&:active {
+		background-color: rgb(150, 3, 150);
+	}
+}
+
+.Navbar {
+	height: 100px;
+	background-color: purple;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 30px;
+	&__link{
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+		font-size: 20px;
+		color: #fff;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: black;
+		}
+	}
+}
+
+.PostsPage {
+	margin: 0 auto;
+	width: 800px;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.PostsInterface {
+	margin-bottom: 30px;
+	&__top {
+		margin-bottom: 15px;
+	}
+
+	&__title {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	&__titleInput {
+		margin-right: 20px;
+	}
+
+	&__btn {
+		margin-right: 20px;
+	}
+
+	&__asyncBtn {}
+
+	&__bot {}
+
+	&__bodyInput {
+
+		width: 100%;
+		max-width: none;
+		min-height: 150px;
+	}
+}
+
+.postList {
+	font-size: 20px;
+}
+
+.post {
+	position: relative;
+	border: 2px solid purple;
+	border-radius: 10px;
+	padding: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	&__title {
+		font-size: 20px;
+		margin-bottom: 15px;
+		font-weight: 600;
+		width: 100%;
+	}
+
+	&__body {
+		font-size: 18px;
+	}
+
+	&__btn {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+}
+
+.TodoPage {
+	margin: 0 auto;
+	width: 800px;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.TodoInterface {
+
+	&__TodoCreator {}
+
+	&__input {
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+
+	&__btn {
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	&__filter {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		select {
+			font-size: 16px;
+			border: 1px solid purple;
+			border-radius: 10px;
+			padding: 5px 15px;
+			
+		}
+	}
+
+	&__title {
+		font-size: 22px;
+		margin-right: 10px;
+	}
+}
+
+.TodoList {
+	display: flex;
+	font-size: 20px;
+	flex-direction: column;
+}
+
+.TodoItem {
+	cursor: pointer;
+	border: 2px solid purple;
+	border-radius: 10px;
+	padding: 5px 15px;
+	font-size: 18px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+	&:hover {
+		background-color: rgba(128, 0, 128, 0.11);
+	}
+	&__main {}
+
+	&__id {
+		margin-right: 20px;
+		font-size: 22px;
+	}
+
+	&__title {
+		font-size: 20px;
+	}
+
+	&__delete {
+		
+	}
+}
+
