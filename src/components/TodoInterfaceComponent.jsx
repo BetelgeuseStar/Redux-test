@@ -13,18 +13,20 @@ function TodoInterfaceComponent({ setFilter, addTodo, addAsyncTodos }) {
 					onChange={(e) => setInputValue(e.target.value)}
 					value={inputValue}
 				/>
-				<button
-					className='TodoInterface__btn btn'
-					onClick={() => {
-						if (inputValue.length) {
-							addTodo(inputValue); setInputValue('')
-						}
-					}}
-				>Add Todo</button>
-				<button
-					className='TodoInterface__btn btn'
-					onClick={() => addAsyncTodos()}
-				>Load todos async</button>
+				<div className='TodoInterface__buttons'>
+					<button
+						className='TodoInterface__btn btn'
+						onClick={() => {
+							if (inputValue.length) {
+								addTodo(inputValue); setInputValue('')
+							}
+						}}
+					>Add Todo</button>
+					<button
+						className='TodoInterface__btn btn'
+						onClick={() => addAsyncTodos()}
+					>Load todos async</button>
+				</div>
 			</div>
 			<div className='TodoInterface__filter'>
 				<h3 className='TodoInterface__title'>Show:</h3>
